@@ -12,16 +12,31 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   let captchaToken = "";
+  let smartCaptcha; // Будем хранить ссылку на экземпляр капчи
 
-  // Клиентский ключ
-  const smartCaptcha = window.smartCaptcha.render(captchaContainer, {
-    sitekey: "ysc1_COEPBkHblFaZwjPcEyG606QQUUqad5fOwFtavjiB24083a65",
-    callback: function (token) {
-      captchaToken = token;
-    },
-    invisible: false, // Установите true для невидимой капчи
-    hl: "ru", // Язык интерфейса капчи (по умолчанию английский)
-  });
+  // Функция для инициализации/перезагрузки капчи
+  function initCaptcha() {
+    // Удаляем предыдущий виджет, если он существует
+    if (smartCaptcha) {
+      captchaContainer.innerHTML = ''; // Очищаем контейнер
+    }
+    
+    // Создаем новый виджет
+    smartCaptcha = window.smartCaptcha.render(captchaContainer, {
+      sitekey: "ysc1_COEPBkHblFaZwjPcEyG606QQUUqad5fOwFtavjiB24083a65",
+      callback: function (token) {
+        captchaToken = token;
+      },
+      invisible: false,
+      hl: "ru",
+    });
+    
+    // Сбрасываем токен
+    captchaToken = "";
+  }
+
+  // Инициализируем капчу при загрузке
+  initCaptcha();
 
   // Обработка отправки формы
   form.addEventListener("submit", async function (e) {
@@ -65,7 +80,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Отправка данных на сервер
     try {
-      const response = await fetch("http://localhost:3000/feedback", {
+      const response = await fetch("http://vladmav.ddns.net:3000/feedback", {
         method: "POST",
         body: formData,
       });
@@ -76,7 +91,9 @@ document.addEventListener("DOMContentLoaded", function () {
         // Успешная отправка
         form.reset();
         alert("Спасибо! Ваша заявка отправлена.");
-
+        
+        // Перезагружаем капчу для новой отправки
+        initCaptcha();
         
       } else {
         // Ошибка от сервера
