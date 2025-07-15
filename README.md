@@ -34,7 +34,7 @@
 
 * Запустить бота
     ```bash
-    docker run --env-file .env mybot
+    docker run --env-file .env --restart unless-stopped mybot
     ```
 
 ## Деплой сайта и сервера
