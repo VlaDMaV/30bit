@@ -1,0 +1,245 @@
+.services {
+  position: relative;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 124px;
+
+  @media (max-width: 1366px) {
+    & {
+      gap: 94px;
+    }
+  }
+  @media (max-width: 768px) {
+    & {
+      gap: 48px;
+    }
+  }
+  @media (max-width: 480px) {
+    & {
+      gap: 58px;
+    }
+  }
+}
+
+.service {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+  position: relative;
+  width: 94%;
+
+  /* Нечётные элементы выравниваются по левому краю */
+  &:nth-child(odd) {
+    margin-left: 0;
+    margin-right: auto;
+
+    @media (max-width: 900px) {
+      & {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        width: 100%;
+      }
+    }
+  }
+
+  /* Чётные элементы выравниваются по правому краю */
+  &:nth-child(even) {
+    margin-left: auto;
+    margin-right: 0;
+
+    @media (max-width: 900px) {
+      & {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        width: 100%;
+      }
+    }
+  }
+
+  /* Стили для нечётных элементов */
+  &:nth-child(odd) .service__count {
+    grid-row: 1; /* Первая строка */
+    grid-column: 1; /* Первый столбец */
+
+    @media (max-width: 900px) {
+      & {
+        grid-row: 1;
+        grid-column: 1;
+      }
+    }
+  }
+
+  &:nth-child(odd) .service__title {
+    grid-row: 2; /* Вторая строка */
+    grid-column: 1; /* Первый столбец */
+
+    @media (max-width: 900px) {
+      & {
+        grid-row: 2;
+        grid-column: 1;
+      }
+    }
+  }
+
+  &:nth-child(odd) .service__text {
+    grid-row: 2; /* Вторая строка */
+    grid-column: 2; /* Второй столбец */
+
+    @media (max-width: 900px) {
+      & {
+        grid-row: 3;
+        grid-column: 1;
+      }
+    }
+  }
+
+  &:nth-child(odd) .service__link {
+    grid-row: 3; /* Третья строка */
+    grid-column: 2; /* Второй столбец */
+
+    @media (max-width: 900px) {
+      & {
+        grid-row: 4;
+        grid-column: 1;
+      }
+    }
+  }
+
+  &:nth-child(odd) .service__image {
+    position: absolute;
+    left: 80px;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 700px;
+
+    @media (max-width: 1366px) {
+      & {
+        max-width: 500px;
+      }
+    }
+    @media (max-width: 900px) {
+      & {
+        left: 0;
+        top: -80%;
+      }
+    }
+    @media (max-width: 480px) {
+      & {
+        left: 0;
+        right: auto;
+        top: -330%;
+      }
+    }
+  }
+
+  /* Стили для чётных элементов */
+  &:nth-child(even) .service__count {
+    grid-row: 1; /* Первая строка */
+    grid-column: 2; /* Второй столбец (пустой в первой строке) */
+
+    @media (max-width: 900px) {
+      & {
+        grid-row: 1;
+        grid-column: 1;
+      }
+    }
+  }
+
+  &:nth-child(even) .service__title {
+    grid-row: 2; /* Вторая строка */
+    grid-column: 2; /* Второй столбец */
+
+    @media (max-width: 900px) {
+      & {
+        grid-row: 2;
+        grid-column: 1;
+        /* margin-bottom: 80px; */
+      }
+    }
+  }
+
+  &:nth-child(even) .service__text {
+    grid-row: 2; /* Вторая строка */
+    grid-column: 1; /* Первый столбец */
+
+    @media (max-width: 900px) {
+      & {
+        grid-row: 3;
+        grid-column: 1;
+      }
+    }
+  }
+
+  &:nth-child(even) .service__link {
+    grid-row: 3; /* Третья строка */
+    grid-column: 1; /* Первый столбец (второй столбец пустой в третьей строке) */
+
+    @media (max-width: 900px) {
+      & {
+        grid-row: 4;
+        grid-column: 1;
+      }
+    }
+  }
+
+  &:nth-child(even) .service__image {
+    position: absolute;
+    left: auto;
+    right: 80px; /* Смещение изображения относительно второго столбца второй строки */
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 700px;
+
+    @media (max-width: 1366px) {
+      & {
+        max-width: 500px;
+      }
+    }
+    @media (max-width: 900px) {
+      & {
+        left: 0;
+        right: auto;
+        top: -80%;
+      }
+    }
+    @media (max-width: 480px) {
+      & {
+        left: 0;
+        right: auto;
+        top: -330%;
+      }
+    }
+  }
+}
+
+.service__title {
+  position: relative;
+}
+
+.service__count {
+  margin-top: 152px;
+  color: var(--white-40);
+}
+
+.service__text {
+  color: var(--white-80);
+}
+
+.service__link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 80% !important;
+  color: var(--lime-primary);
+  font-weight: 300;
+  width: fit-content;
+
+  &:hover {
+    color: var(--lime-active);
+  }
+}

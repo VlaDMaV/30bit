@@ -1,0 +1,154 @@
+.burger-button-wrapper {
+  display: none;
+  position: relative;
+
+  @media (max-width: 768px) {
+    & {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+}
+
+.burger-button {
+  display: none;
+
+  @media (max-width: 768px) {
+    & {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.burger-modal {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  flex-direction: column;
+  top: -4px;
+  right: -10px;
+  width: 50%;
+  background-color: var(--black-secondary);
+  border-radius: 4px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+  z-index: 1001;
+  padding: 56px 24px 24px 24px;
+  gap: 32px;
+  transition: none;
+}
+
+.burger-modal.open {
+  display: flex;
+  animation: fadeIn 0.2s forwards;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.burger-modal.closing {
+  animation: fadeOut 0.2s forwards;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Анимация появления */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Анимация ухода */
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+.burger-modal__close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 38px;
+  color: var(--white-60, #ccc);
+  cursor: pointer;
+  transition: color 0.3s;
+  z-index: 2;
+
+  &:hover {
+    color: var(--lime-primary, #c2ff00);
+  }
+}
+
+.burger-modal__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 24px;
+}
+
+.burger-modal__link {
+  color: var(--white-100);
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover {
+    color: var(--lime-primary, #c2ff00);
+  }
+}
+
+.burger-modal__contacts {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.burger-modal__email {
+  color: var(--white-100);
+  text-decoration: none;
+  margin-bottom: 8px;
+  opacity: 0.8;
+}
+
+.burger-modal__socials {
+  display: flex;
+  gap: 18px;
+
+  & a img {
+    width: 24px;
+    height: 24px;
+    opacity: 0.8;
+    transition: opacity 0.2s;
+  }
+  & a:hover img {
+    opacity: 1;
+  }
+}

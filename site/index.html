@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Консалтинг, анализ и автоматизация для бизнеса — умные решения и готовое высокопроизводительное ПО">
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function (m, e, t, r, i, k, a) {
+            m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) };
+            m[i].l = 1 * new Date();
+            for (var j = 0; j < document.scripts.length; j++) { if (document.scripts[j].src === r) { return; } }
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+            (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(101158736, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/101158736" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon4.png">
+
+    <!-- Подключение стилей -->
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+
+    <!-- Яндекс SmartCaptcha -->
+    <script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
+
+    <title>30 БИТ - Консалтинг Анализ Автоматизация</title>
+</head>
+
+<body>
+    <div id="top"></div>
+    <!-- Шапка сайта -->
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#top" class="logo">
+                    <img src="images/logo.svg" alt="30bit">
+                </a>
+                <nav class="navigation">
+                    <ul class="menu">
+                        <li class="menu__item font_body_5"><a href="#about">О компании</a></li>
+                        <li class="menu__item font_body_5"><a href="#services">Услуги</a></li>
+                        <li class="menu__item font_body_5"><a href="#products">Продукты</a></li>
+                        <li class="menu__item font_body_5"><a href="#footer">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="#contacts" class="navigation-contacts-button font_body_5">Написать нам</a>
+            </div>
+            <div class="burger-button-wrapper">
+                <a href="#top" class="logo">
+                    <img src="images/logo.svg" alt="30bit">
+                </a>
+                <button class="burger-button">
+                    <img src="images/icons/burger_button.svg" alt="Меню">
+                </button>
+                <div class="burger-modal" id="burger-modal">
+                    <button class="burger-modal__close" aria-label="Закрыть меню">
+                        <img src="/images/icons/close.svg" alt="Закрыть меню" />
+                    </button>
+                    <nav class="burger-modal__nav">
+                        <a href="#about" class="burger-modal__link font_body_1">О компании</a>
+                        <a href="#services" class="burger-modal__link font_body_1">Услуги</a>
+                        <a href="#products" class="burger-modal__link font_body_1">Продукты</a>
+                        <a href="#footer" class="burger-modal__link font_body_1">Контакты</a>
+                    </nav>
+                    <div class="burger-modal__contacts">
+                        <a href="mailto:info@30bit.ru" class="burger-modal__email font_body_2">info@30bit.ru</a>
+                        <div class="burger-modal__socials">
+                            <a href="#"><img src="/images/icons/telegram_small.svg" alt="Telegram" /></a>
+                            <a href="#"><img src="/images/icons/whatsapp_small.svg" alt="Whatsapp" /></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Основной контент -->
+    <main>
+        <!-- Секция героя -->
+        <section class="hero section-padding-top">
+            <div class="container">
+                <div class="hero__content">
+                    <h1>
+                        Консалтинг<br>
+                        Анализ<br>
+                        Автоматизация
+                    </h1>
+                    <a href="#contacts" class="button button_primary">Оставить заявку</a>
+                    <div class="hero__image">
+                        <img src="images/hero.png" alt="Технологии будущего">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- О компании -->
+        <section id="about" class="about section-padding-top section-margin-bottom">
+            <div class="container">
+                <div class="about-inner">
+                    <div class="section-inner">
+                        <div class="section-title">
+                            <p class="subtitle">О компании</p>
+                        </div>
+                        <div class="about__description-block">
+                            <p class="about__text font_body_1">Обеспечиваем безопасность и развитие вашего бизнеса
+                                с помощью современных технологий для сбора, обработки и анализа данных. Используем
+                                наш опыт для достижения высокой точности и эффективности ваших решений</p>
+                            <div class="about__year">
+                                <p class="font_body_2">с <span>2019</span> года </p>
+                                <p class="font_body_2">работаем на IT рынке</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="about__subtitle font_body_2">Принципы нашей работы</h3>
+                        <h3 class="description_bold">Инновации, автоматизация, искусственный интеллект — умные решения
+                            для вашего бизнеса</h3>
+                    </div>
+                    <div class="section-inner">
+                        <h3 class="about__subtitle font_body_2">Преимущества</h3>
+                        <div class="features">
+                            <div class="feature">
+                                <div class="feature__image">
+                                    <img src="images/features/complex.png" alt="Комплексный подход">
+                                </div>
+                                <h6 class="feature__title">Комплексный подход</h6>
+                                <p class="feature__text font_body_3">Выполняем весь цикл работ — поиск, обработка
+                                    и анализ данных с предоставлением готовых решений на базе современных технологий</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__image">
+                                    <img src="images/features/speed.png" alt="Скорость и автоматизация">
+                                </div>
+                                <h6 class="feature__title">Скорость и автоматизация</h6>
+                                <p class="feature__text font_body_3">Повышаем скорость выполнения задач с помощью
+                                    автоматизации, машинного обучения, нейронных сетей и собственных аналитических
+                                    инструментов</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__image">
+                                    <img src="images/features/customization.png" alt="Кастомизация">
+                                </div>
+                                <h6 class="feature__title">Кастомизация</h6>
+                                <p class="feature__text font_body_3">Разрабатываем персонализированные ИТ-решения,
+                                    адаптируя продукты под уникальные задачи вашего бизнеса</p>
+                            </div>
+                            <div class="feature">
+                                <div class="feature__image">
+                                    <img src="images/features/flexible.png" alt="Прозрачность и контроль">
+                                </div>
+                                <h6 class="feature__title">Прозрачность и контроль</h6>
+                                <p class="feature__text font_body_3">Обеспечиваем процесс работы максимально открыто,
+                                    предоставляем доступ ко всей информации о ходе проекта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="font_body_1">Разрабатываем специализированное ПО для мониторинга и анализа данных
+                        в информационных пространствах и сетях. Наши системы усиливают инструменты поиска и применяются
+                        как в закрытых, так и в открытых продуктах, помогая эффективно выявлять и решать существующие
+                        и потенциальные угрозы</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section id="services" class="services section-padding-top section-margin-bottom">
+            <div class="container">
+                <div class="section-inner">
+                    <div class="section-title">
+                        <p class="subtitle">Услуги</p>
+                    </div>
+                    <div class="services-list">
+                        <div class="service">
+                            <p class="service__count font_body_1">01</p>
+                            <div class="service__title">
+                                <h2>Разработка</h2>
+                                <div class="service__image"><img src="/images/services/service_1.png" alt="Изображение">
+                                </div>
+                            </div>
+                            <p class="service__text font_body_2">Осуществляем полный цикл разработки программного
+                                обеспечения для бизнеса. Реализуем ваши идеи в функциональные и эффективные решения,
+                                адаптированные под ваши нужды. Используем современные технологии и методологии</p>
+                            <a href="#contacts" class="service__link">
+                                <p class="font_body_3">Оставить заявку</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.154708 9.87525C0.055252 9.70298 0.0283004 9.49827 0.0797828 9.30613C0.131265 9.114 0.256964 8.95018 0.429227 8.85073L9.25403 3.75573L4.17241 2.39411C4.07427 2.37149 3.98168 2.32934 3.90018 2.27016C3.81868 2.21098 3.74994 2.13599 3.69805 2.04967C3.64616 1.96335 3.61218 1.86746 3.59816 1.76772C3.58413 1.66798 3.59034 1.56644 3.6164 1.46916C3.64247 1.37187 3.68787 1.28083 3.74988 1.20147C3.8119 1.12211 3.88927 1.05605 3.97736 1.00724C4.06546 0.958426 4.16249 0.927857 4.26266 0.917357C4.36283 0.906858 4.46409 0.916641 4.5604 0.946125L11.3905 2.77625C11.5825 2.82781 11.7461 2.95345 11.8455 3.12558C11.9449 3.2977 11.9718 3.50223 11.9205 3.69424L10.0904 10.5244C10.0678 10.6225 10.0256 10.7151 9.96645 10.7966C9.90727 10.8781 9.83228 10.9468 9.74596 10.9987C9.65963 11.0506 9.56374 11.0846 9.46401 11.0986C9.36427 11.1126 9.26273 11.1064 9.16544 11.0804C9.06816 11.0543 8.97712 11.0089 8.89776 10.9469C8.81839 10.8849 8.75234 10.8075 8.70352 10.7194C8.65471 10.6313 8.62414 10.5343 8.61364 10.4341C8.60314 10.3339 8.61293 10.2327 8.64241 10.1364L10.004 5.05476L1.17923 10.1498C1.00696 10.2492 0.802247 10.2762 0.610113 10.2247C0.417978 10.1732 0.254164 10.0475 0.154708 9.87525Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="service">
+                            <p class="service__count font_body_1">02</p>
+                            <div class="service__title">
+                                <h2>Аудит</h2>
+                                <div class="service__image"><img src="/images/services/service_2.png" alt="Изображение">
+                                </div>
+                            </div>
+                            <p class="service__text font_body_2">Проводим аудит систем безопасности, разрабатываем
+                                комплексные защитные меры и помогаем создавать надёжную цифровую среду, чтобы вы могли
+                                уверенно развивать свой бизнес</p>
+                            <a href="#contacts" class="service__link">
+                                <p class="font_body_3">Оставить заявку</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.154708 9.87525C0.055252 9.70298 0.0283004 9.49827 0.0797828 9.30613C0.131265 9.114 0.256964 8.95018 0.429227 8.85073L9.25403 3.75573L4.17241 2.39411C4.07427 2.37149 3.98168 2.32934 3.90018 2.27016C3.81868 2.21098 3.74994 2.13599 3.69805 2.04967C3.64616 1.96335 3.61218 1.86746 3.59816 1.76772C3.58413 1.66798 3.59034 1.56644 3.6164 1.46916C3.64247 1.37187 3.68787 1.28083 3.74988 1.20147C3.8119 1.12211 3.88927 1.05605 3.97736 1.00724C4.06546 0.958426 4.16249 0.927857 4.26266 0.917357C4.36283 0.906858 4.46409 0.916641 4.5604 0.946125L11.3905 2.77625C11.5825 2.82781 11.7461 2.95345 11.8455 3.12558C11.9449 3.2977 11.9718 3.50223 11.9205 3.69424L10.0904 10.5244C10.0678 10.6225 10.0256 10.7151 9.96645 10.7966C9.90727 10.8781 9.83228 10.9468 9.74596 10.9987C9.65963 11.0506 9.56374 11.0846 9.46401 11.0986C9.36427 11.1126 9.26273 11.1064 9.16544 11.0804C9.06816 11.0543 8.97712 11.0089 8.89776 10.9469C8.81839 10.8849 8.75234 10.8075 8.70352 10.7194C8.65471 10.6313 8.62414 10.5343 8.61364 10.4341C8.60314 10.3339 8.61293 10.2327 8.64241 10.1364L10.004 5.05476L1.17923 10.1498C1.00696 10.2492 0.802247 10.2762 0.610113 10.2247C0.417978 10.1732 0.254164 10.0475 0.154708 9.87525Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="service">
+                            <p class="service__count font_body_1">03</p>
+                            <div class="service__title">
+                                <h2>Консалтинг</h2>
+                                <div class="service__image"><img src="/images/services/service_3.png" alt="Изображение">
+                                </div>
+                            </div>
+                            <p class="service__text font_body_2">Повышаем эффективность вашего бизнеса за счёт
+                                оптимизации процессов и внедрения современных IT-решений. Предоставляем профессиональные
+                                консультации и поддержку, чтобы вы достигали лучших результатов и уверенно росли
+                                на рынке</p>
+                            <a href="#contacts" class="service__link">
+                                <p class="font_body_3">Оставить заявку</p>
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.154708 9.87525C0.055252 9.70298 0.0283004 9.49827 0.0797828 9.30613C0.131265 9.114 0.256964 8.95018 0.429227 8.85073L9.25403 3.75573L4.17241 2.39411C4.07427 2.37149 3.98168 2.32934 3.90018 2.27016C3.81868 2.21098 3.74994 2.13599 3.69805 2.04967C3.64616 1.96335 3.61218 1.86746 3.59816 1.76772C3.58413 1.66798 3.59034 1.56644 3.6164 1.46916C3.64247 1.37187 3.68787 1.28083 3.74988 1.20147C3.8119 1.12211 3.88927 1.05605 3.97736 1.00724C4.06546 0.958426 4.16249 0.927857 4.26266 0.917357C4.36283 0.906858 4.46409 0.916641 4.5604 0.946125L11.3905 2.77625C11.5825 2.82781 11.7461 2.95345 11.8455 3.12558C11.9449 3.2977 11.9718 3.50223 11.9205 3.69424L10.0904 10.5244C10.0678 10.6225 10.0256 10.7151 9.96645 10.7966C9.90727 10.8781 9.83228 10.9468 9.74596 10.9987C9.65963 11.0506 9.56374 11.0846 9.46401 11.0986C9.36427 11.1126 9.26273 11.1064 9.16544 11.0804C9.06816 11.0543 8.97712 11.0089 8.89776 10.9469C8.81839 10.8849 8.75234 10.8075 8.70352 10.7194C8.65471 10.6313 8.62414 10.5343 8.61364 10.4341C8.60314 10.3339 8.61293 10.2327 8.64241 10.1364L10.004 5.05476L1.17923 10.1498C1.00696 10.2492 0.802247 10.2762 0.610113 10.2247C0.417978 10.1732 0.254164 10.0475 0.154708 9.87525Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Продукты -->
+        <section id="products" class="products section-padding-top section-margin-bottom">
+            <div class="container">
+                <div class="section-inner">
+                    <div class="section-title">
+                        <p class="subtitle">Наши продукты</p>
+                    </div>
+                    <div class="products-list">
+                        <div class="product-card">
+                            <div class="product-card-text-block">
+                                <h4 class="product-card__title">Neurotezis</h4>
+                                <p class="product-card__description font_body_3">Автоматизированная
+                                    информационно-аналитическая система по сбору, анализу и мониторингу данных
+                                    из открытых источников на основе AI</p>
+                            </div>
+                            <ul class="product-card__list">
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Сбор данных об объекте исследования</p>
+                                </li>
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Мониторинг информационного пространства сети интернет</p>
+                                </li>
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Сбор информации по криптокошелькам и движению средств</p>
+                                </li>
+                            </ul>
+                            <a href="https://neurotezis.ru/" class="product-card__link">
+                                <p class="font_body_3">Узнать подробнее</p>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15471 15.8752C6.05525 15.703 6.0283 15.4983 6.07978 15.3061C6.13127 15.114 6.25696 14.9502 6.42923 14.8507L15.254 9.75573L10.1724 8.39411C10.0743 8.37149 9.98168 8.32934 9.90018 8.27016C9.81868 8.21098 9.74994 8.13599 9.69805 8.04967C9.64616 7.96335 9.61218 7.86746 9.59816 7.76772C9.58413 7.66798 9.59034 7.56644 9.6164 7.46916C9.64247 7.37187 9.68787 7.28083 9.74988 7.20147C9.8119 7.12211 9.88927 7.05605 9.97736 7.00724C10.0655 6.95843 10.1625 6.92786 10.2627 6.91736C10.3628 6.90686 10.4641 6.91664 10.5604 6.94612L17.3905 8.77625C17.5825 8.82781 17.7461 8.95345 17.8455 9.12558C17.9449 9.2977 17.9718 9.50223 17.9205 9.69424L16.0904 16.5244C16.0678 16.6225 16.0256 16.7151 15.9664 16.7966C15.9073 16.8781 15.8323 16.9468 15.746 16.9987C15.6596 17.0506 15.5637 17.0846 15.464 17.0986C15.3643 17.1126 15.2627 17.1064 15.1654 17.0804C15.0682 17.0543 14.9771 17.0089 14.8978 16.9469C14.8184 16.8849 14.7523 16.8075 14.7035 16.7194C14.6547 16.6313 14.6241 16.5343 14.6136 16.4341C14.6031 16.3339 14.6129 16.2327 14.6424 16.1364L16.004 11.0548L7.17923 16.1498C7.00696 16.2492 6.80225 16.2762 6.61011 16.2247C6.41798 16.1732 6.25416 16.0475 6.15471 15.8752Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                            <div class="product-card__image">
+                                <img src="images/products/neurotezis.png" alt="Neurotezis">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-text-block">
+                                <h4 class="product-card__title">Wave Hunter</h4>
+                                <p class="product-card__description font_body_3">Анализатор устройств Bluetooth и Wi-Fi
+                                    в радиусе действия с элементами трекинга и визуализации маршрута</p>
+                            </div>
+                            <ul class="product-card__list">
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Поиск Wi-Fi и Bluetooth устройств</p>
+                                </li>
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Расчёт расстояния до устройств</p>
+                                </li>
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Отображение данных на карте</p>
+                                </li>
+                            </ul>
+                            <a href="#contacts" class="product-card__link">
+                                <p class="font_body_3">Оставить заявку</p>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15471 15.8752C6.05525 15.703 6.0283 15.4983 6.07978 15.3061C6.13127 15.114 6.25696 14.9502 6.42923 14.8507L15.254 9.75573L10.1724 8.39411C10.0743 8.37149 9.98168 8.32934 9.90018 8.27016C9.81868 8.21098 9.74994 8.13599 9.69805 8.04967C9.64616 7.96335 9.61218 7.86746 9.59816 7.76772C9.58413 7.66798 9.59034 7.56644 9.6164 7.46916C9.64247 7.37187 9.68787 7.28083 9.74988 7.20147C9.8119 7.12211 9.88927 7.05605 9.97736 7.00724C10.0655 6.95843 10.1625 6.92786 10.2627 6.91736C10.3628 6.90686 10.4641 6.91664 10.5604 6.94612L17.3905 8.77625C17.5825 8.82781 17.7461 8.95345 17.8455 9.12558C17.9449 9.2977 17.9718 9.50223 17.9205 9.69424L16.0904 16.5244C16.0678 16.6225 16.0256 16.7151 15.9664 16.7966C15.9073 16.8781 15.8323 16.9468 15.746 16.9987C15.6596 17.0506 15.5637 17.0846 15.464 17.0986C15.3643 17.1126 15.2627 17.1064 15.1654 17.0804C15.0682 17.0543 14.9771 17.0089 14.8978 16.9469C14.8184 16.8849 14.7523 16.8075 14.7035 16.7194C14.6547 16.6313 14.6241 16.5343 14.6136 16.4341C14.6031 16.3339 14.6129 16.2327 14.6424 16.1364L16.004 11.0548L7.17923 16.1498C7.00696 16.2492 6.80225 16.2762 6.61011 16.2247C6.41798 16.1732 6.25416 16.0475 6.15471 15.8752Z"
+                                        fill="currentColor" />
+                                </svg>
+
+                            </a>
+                            <div class="product-card__image">
+                                <img src="images/products/antininja.png" alt="Anti Ninja">
+                            </div>
+                        </div>
+                        <div class="product-card">
+                            <div class="product-card-text-block">
+                                <h4 class="product-card__title">Server Orchestrator Pro (SOP)</h4>
+                                <p class="product-card__description font_body_3">
+                                    Интерактивная, визуально-управляемая система синхронного выполнения и автоматизации
+                                    задач на серверах с поддержкой живого управления и гибкой организацией
+                                    инфраструктуры
+                                </p>
+                            </div>
+                            <ul class="product-card__list">
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Разработана в рамках импортозамещения</p>
+                                </li>
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Автоматизация развёртывания проектов на серверах</p>
+                                </li>
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Синхронное выполнение команд и скриптов</p>
+                                </li>
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Запись и повтор выполнения процессов</p>
+                                </li>
+                                <li>
+                                    <img src="/images/icons/star.svg" alt="Маркер списка">
+                                    <p class="font_body_3">Импорт и экспорт скриптов, конфигураций и задач</p>
+                                </li>
+                            </ul>
+                            <a href="#contacts" class="product-card__link">
+                                <p class="font_body_3">Оставить заявку</p>
+                                <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M6.15471 15.8752C6.05525 15.703 6.0283 15.4983 6.07978 15.3061C6.13127 15.114 6.25696 14.9502 6.42923 14.8507L15.254 9.75573L10.1724 8.39411C10.0743 8.37149 9.98168 8.32934 9.90018 8.27016C9.81868 8.21098 9.74994 8.13599 9.69805 8.04967C9.64616 7.96335 9.61218 7.86746 9.59816 7.76772C9.58413 7.66798 9.59034 7.56644 9.6164 7.46916C9.64247 7.37187 9.68787 7.28083 9.74988 7.20147C9.8119 7.12211 9.88927 7.05605 9.97736 7.00724C10.0655 6.95843 10.1625 6.92786 10.2627 6.91736C10.3628 6.90686 10.4641 6.91664 10.5604 6.94612L17.3905 8.77625C17.5825 8.82781 17.7461 8.95345 17.8455 9.12558C17.9449 9.2977 17.9718 9.50223 17.9205 9.69424L16.0904 16.5244C16.0678 16.6225 16.0256 16.7151 15.9664 16.7966C15.9073 16.8781 15.8323 16.9468 15.746 16.9987C15.6596 17.0506 15.5637 17.0846 15.464 17.0986C15.3643 17.1126 15.2627 17.1064 15.1654 17.0804C15.0682 17.0543 14.9771 17.0089 14.8978 16.9469C14.8184 16.8849 14.7523 16.8075 14.7035 16.7194C14.6547 16.6313 14.6241 16.5343 14.6136 16.4341C14.6031 16.3339 14.6129 16.2327 14.6424 16.1364L16.004 11.0548L7.17923 16.1498C7.00696 16.2492 6.80225 16.2762 6.61011 16.2247C6.41798 16.1732 6.25416 16.0475 6.15471 15.8752Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </a>
+                            <div class="product-card__image">
+                                <img src="images/products/sop.png" alt="Server Orchestrator Pro">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Партнеры -->
+        <section id="partners" class="partners section-padding-top section-margin-bottom">
+            <div class="container">
+                <div class="partners-inner">
+                    <div class="section-inner">
+                        <div class="section-title">
+                            <p class="subtitle">Наши партнеры</p>
+                        </div>
+                        <ul class="partners-list">
+                            <li class="partner"><img src="./images/partners/AML_20_Crypto.png" class="partner-logo" />
+                            </li>
+                            <li class="partner"><img src="./images/partners/KMB.png" class="partner-logo" /></li>
+                            <li class="partner"><img src="./images/partners/IIP.png" class="partner-logo" /></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Форма обратной связи -->
+        <section id="contacts" class="contacts section-padding-top">
+            <div class="container">
+                <div class="contacts-wrapper">
+                    <div class="contacts-text-wrapper">
+                        <h3 class="contacts__title">Поможем подобрать<br /> <span>лучшие IT-решения</span><br /> для
+                            вашего
+                            бизнеса</h3>
+                        <div class="contacts-text-block">
+                            <p class="font_body_2">Расскажите о своих задачах, и мы предложим вам индивидуальные решения
+                                или готовые продукты</p>
+                            <div class="contacts__socials">
+                                <div class="contacts__social">
+                                    <a href="https://t.me/official30bit_bot" target="_blank">
+                                        <img src="/images/icons/telegram.svg" alt="Telegram"/>
+                                    </a>
+                                </div>
+                                <div class="contacts__social">
+                                    <img src="/images/icons/whatsapp.svg" alt="Whatsapp"/>
+                                </div>
+                            </div>
+                            <p class="font_body_2">Или свяжитесь с нами напрямую</p>
+                            <button id="openFormBtn" class="button button_primary">Оставить заявку</button>
+                        </div>
+                    </div>
+                    <div class="contacts-form-wrapper hidden" id="formWrapper">
+                        <form class="contacts-form" action="#" method="POST" id="contactForm">
+                            <div class="contacts-form__field">
+                                <label for="email">Электронная почта</label>
+                                <input type="email" id="email" name="email" placeholder="Введите ваш email" required />
+                            </div>
+
+                            <div class="contacts-form__field">
+                                <label for="phone">Телефон</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона" required />
+                            </div>
+
+                            <div class="contacts-form__field">
+                                <label for="message">Сообщение</label>
+                                <textarea id="message" name="message" placeholder="Ваше сообщение" required></textarea>
+                            </div>
+
+                            <div class="contacts-form__consent">
+                                <input type="checkbox" id="consent" name="consent" required />
+                                <label for="consent">Я даю согласие на обработку персональных данных</label>
+                            </div>
+
+                            <div class="contacts-form__field" id="captcha-container"></div>
+
+                            <button type="submit" class="button button_primary">Отправить</button>
+                        </form>
+                    </div> 
+                    <div class="contacts__image">
+                        <img src="/images/contact/contact.png" alt="Фон" />
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__info">
+                    <div class="footer__company">
+                        <h5 class="footer__company-name">ООО «30 БИТ»</h5>
+                        <p class="footer__company-description font_body_5">Разработка и внедрение ПО</p>
+                    </div>
+                    <div class="footer__contacts">
+                        <address class="footer__address font_body_2">г. Москва, ул. Зорге, 10к1</address>
+                        <a href="mailto:info@30bit.ru" class="footer__email font_body_2">info@30bit.ru</a>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="tel:+74991959902" class="footer__phone font_body_2">+7 499 195-99-02</a>
+                        <a href="tel:+79255215006" class="footer__phone font_body_2">+7 925 521-50-06</a>
+                    </div>
+                </div>
+                <div class="footer__bottom">
+                    <div class="footer__logo">
+                        <img src="images/logo.svg" alt="30bit">
+                    </div>
+                    <nav class="footer__navigation">
+                        <ul class="menu">
+                            <li class="menu__item font_body_3"><a href="#about">О компании</a></li>
+                            <li class="menu__item font_body_3"><a href="#services">Услуги</a></li>
+                            <li class="menu__item font_body_3"><a href="#products">Продукты</a></li>
+                            <li class="menu__item font_body_3"><a href="#footer">Контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer__socials">
+                        <a href="#"><img src="/images/icons/telegram_small.svg" alt="Telegram" /></a>
+                        <a href="#"><img src="/images/icons/whatsapp_small.svg" alt="Whatsapp" /></a>
+                        <a href="mailto:mail@30bit.ru" class="footer__email_small font_body_5">mail@30bit.ru</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <p class="font_body_4">© ООО «30 БИТ» 2025</p>
+                <a class="font_body_4" href="#" target="_blank" rel="noopener">Политика конфиденциальности</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/burger-menu.js"></script>
+    <script src="/js/form-handler.js"></script>
+
+</body>
+
+</html>
